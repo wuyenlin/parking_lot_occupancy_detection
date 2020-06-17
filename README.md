@@ -24,3 +24,24 @@ See arguments in [options.py](utils/option.py).
 python >= 3.6
 pytorch >= 0.4
 ```
+
+### Results
+Results of Table 2 are shown below, with epochs=18.
+
+|Test set | Paper | Pytorch |
+|-----	  |-----  | -----   |
+|Trained on UFPR04	    |
+|UFPR04   | 0.9954| 0.9590  |
+|UFPR05   | 0.9329| 0.7520  |
+|PUC	  | 0.9827| 0.9040  |
+|Trained on UFPR05	    |
+|UFPR04   | 0.9369| 0.8460  |
+|UFPR05   | 0.9949| 0.9740  |
+|PUC	  | 0.9272| 0.9070  |
+|Trained on PUC		    |
+|UFPR04   | 0.9803| 0.9440  |
+|UFPR05   | 0.9600| 0.9330  |
+|PUC	  | 0.9990| 0.9880  |
+
+### References
+Amato, Giuseppe and Carrara, Fabio and Falchi, Fabrizio and Gennaro, Claudio and Meghini, Carlo and Vairo, Claudio. Deep learning for decentralized parking lot occupancy detection. Expert Systems with Applications (Pergamon), 2017.
