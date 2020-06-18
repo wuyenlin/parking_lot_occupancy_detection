@@ -1,7 +1,10 @@
-# parking_lot_occupancy_detection
+# Parking Lot Occupancy Detection
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1Lx6dhTaeQMBFaK3b9A5q9gbBCJaDm4C9/view?usp=sharing) 
 
 This repository contains the code to reproduce the result of [Deep learning for decentralized parking lot occupancy detection](https://www.sciencedirect.com/science/article/abs/pii/S095741741630598X).
-More details regarding the paper can be found on [CNRPark+EXT](http://cnrpark.it/), where dataset and labels could be downloaded.
+More details regarding the paper can be found on [CNRPark+EXT](http://cnrpark.it/), where dataset and labels could be downloaded. 
+This reproduction code is done by Hao Liu, Sigurd Totland, and Yen-Lin Wu.
 
 ### Running the code
 Clone the repository and download the image dataset. Run the code as follows:
@@ -22,22 +25,49 @@ pytorch >= 0.4
 ```
 
 ### Results
+For the moment, only Table 2 and Figure 5 are reproduced from the paper. Some variances could be observed from the results compared to paper. The optimal epochs for each experiment are still being worked on.
+
 Results of Table 2 are shown below, with epochs=18.
 
 |Test set | Paper | Pytorch |
 |-----	  |-----  | -----   |
 |Trained on UFPR04	    |
-|UFPR04   | 0.9954| 0.9590  |
-|UFPR05   | 0.9329| 0.7520  |
-|PUC	  | 0.9827| 0.9040  |
+|UFPR04   | 0.9954| 0.9600  |
+|UFPR05   | 0.9329| 0.7990  |
+|PUC	  | 0.9827| 0.9300  |
 |Trained on UFPR05	    |
-|UFPR04   | 0.9369| 0.8460  |
-|UFPR05   | 0.9949| 0.9740  |
-|PUC	  | 0.9272| 0.9070  |
+|UFPR04   | 0.9369| 0.8000  |
+|UFPR05   | 0.9949| 0.9760  |
+|PUC	  | 0.9272| 0.9010  |
 |Trained on PUC		    |
-|UFPR04   | 0.9803| 0.9440  |
-|UFPR05   | 0.9600| 0.9330  |
-|PUC	  | 0.9990| 0.9880  |
+|UFPR04   | 0.9803| 0.9560  |
+|UFPR05   | 0.9600| 0.9490  |
+|PUC	  | 0.9990| 0.9890  |
+|Trained on CNRParkOdd
+|CNRParkEven|0.9013|0.9190  |
+|Trained on CNRParkEven
+|CNRParkOdd|0.9071| 0.9240  |
+
+
+Results of Figure 5 are shown below.
+
+Paper results:
+
+|Test set | Paper | Pytorch |
+|-----	  |-----  | -----   |
+|Trained on SUNNY	    |
+|OVERCAST | 0.970  | 0.946 |
+|RAINY    | 0.960  | 0.912 |
+|PKLot    | 0.850  | 0.759 |
+|Trained on OVERCAST      |
+|SUNNY    | 0.920 | 0.917 |
+|RAINY    | 0.950 | 0.920 |
+|PKLot    | 0.820 | 0.709 |
+|Trained on RAINY	  |
+|SUNNY    | 0.940 | 0.914 |
+|OVERCAST | 0.970 | 0.959 |
+|PKLot    | 0.920 | 0.651 |
+
 
 ### References
 Amato, Giuseppe and Carrara, Fabio and Falchi, Fabrizio and Gennaro, Claudio and Meghini, Carlo and Vairo, Claudio. Deep learning for decentralized parking lot occupancy detection. Expert Systems with Applications (Pergamon), 2017.
