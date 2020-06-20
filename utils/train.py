@@ -27,7 +27,7 @@ def train(epoch, img_path, target_path, transforms, net, criterion):
                 device = torch.device("cuda:0")
                 inputs = inputs.to(device)
                 labels = labels.to(device)
-            optimizer = optim.SGD(net.parameters(), lr=learning_rate, momentum=0.9)
+            optimizer = optim.SGD(net.parameters(), lr=learning_rate, momentum=0.9, weight_decay=0.0005)
             optimizer.zero_grad()
             outputs = net(inputs)
             loss = criterion(outputs, labels.long())
