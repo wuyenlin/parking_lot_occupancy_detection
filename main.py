@@ -43,9 +43,17 @@ if __name__=="__main__":
         train(args.epochs, args.train_img, args.train_lab, transforms, net, criterion)
         PATH = './model.pth'
         torch.save(net.state_dict(), PATH)
+        if args.model == 'mAlexNet':
+            net = mAlexNet().to(device)
+        elif args.model == 'AlexNet':
+            net = AlexNet().to(device)
         net.load_state_dict(torch.load(PATH))
     else:
         PATH = args.path
+        if args.model == 'mAlexNet':
+            net = mAlexNet().to(device)
+        elif args.model == 'AlexNet':
+            net = AlexNet().to(device)
         net.load_state_dict(torch.load(PATH))
     accuracy = test(args.test_img, args.test_lab, transforms, net)
     print("\nThe accuracy of training on '{}' and testing on '{}' is {:.3f}.".format(args.train_lab.split('.')[0], args.test_lab.split('.')[0], accuracy))
