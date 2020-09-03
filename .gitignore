@@ -1,3 +1,10 @@
+# Dataset
+LABELS/
+PATCHES/
+CNRPark-Patches-150x150/
+PKLot/
+splits/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 utils/__pycache__/
@@ -31,14 +38,9 @@ pip-delete-this-directory.txt
 # pyenv
 .python-version
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
-
 # Environments
 .env
 .venv
 env/
 venv/
 ENV/
-env.bak/
-venv.bak/

@@ -6,15 +6,31 @@ This repository contains the code to reproduce the result of [Deep learning for 
 More details regarding the paper can be found on [CNRPark+EXT](http://cnrpark.it/), where dataset and labels could be downloaded. 
 This reproduction code is done by Hao Liu, Sigurd Totland, and Yen-Lin Wu.
 
-### Running the code
-Clone the repository and download the image dataset. Run the code as follows:
+### Download dataset
+There are 3 sets of dataset and their labels required to run this code. Run [get_dataset.sh](get_dataset.sh) as follows:
 
-> python3 [main.py](main.py)
+```
+sudo chmod +x get_dataset.sh
+./get_dataset.sh
+```
+
+This command will download the datasets and unzip them in the project root directory.
+Make sure to include the correct directory in the next section when parsing the argument.
+
+
+### Running the code
+Run the code as follows:
+
+```
+python3 [main.py](main.py)
+```
 
 By default, it runs `epochs=18`, train on `CNRPark Even` and test on `CNRPark Odd`. 
 If a trained model is to be loaded and test on other dataset (i.e. `.pth` file exists), or AlexNet is to be used, run the following command:
 
-> python3 main.py --path trained_model/sunny.pth --model AlexNet
+```
+python3 main.py --path trained_model/sunny.pth --model AlexNet
+```
 
 See arguments in [options.py](utils/option.py).
 
