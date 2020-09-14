@@ -22,7 +22,7 @@ Make sure to include the correct directory in the next section when parsing the 
 Run the code as follows:
 
 ```
-python3 [main.py](main.py)
+python3 main.py
 ```
 
 By default, it runs `epochs=18`, train on `CNRPark Even` and test on `CNRPark Odd`. 
