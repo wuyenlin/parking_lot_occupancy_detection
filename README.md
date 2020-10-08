@@ -1,6 +1,6 @@
 # Parking Lot Occupancy Detection
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zau9rpEkNuihJca9BI6raiRaiNOwj_-j?usp=sharing) 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19WoAA0vinucKOj-dxMs8je-tKms8rZza?usp=sharing) 
 
 This repository contains the code to reproduce the result of [Deep learning for decentralized parking lot occupancy detection](https://www.sciencedirect.com/science/article/abs/pii/S095741741630598X).
 More details regarding the paper can be found on [CNRPark+EXT](http://cnrpark.it/), where dataset and labels could be downloaded. 
