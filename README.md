@@ -86,5 +86,13 @@ Paper results:
 
 ### References
 ```
-Amato, Giuseppe and Carrara, Fabio and Falchi, Fabrizio and Gennaro, Claudio and Meghini, Carlo and Vairo, Claudio. Deep learning for decentralized parking lot occupancy detection. Expert Systems with Applications (Pergamon), 2017.
+@article{amato2017deep,
+  title={Deep learning for decentralized parking lot occupancy detection},
+  author={Amato, Giuseppe and Carrara, Fabio and Falchi, Fabrizio and Gennaro, Claudio and Meghini, Carlo and Vairo, Claudio},
+  journal={Expert Systems with Applications},
+  volume={72},
+  pages={327--334},
+  year={2017},
+  publisher={Pergamon}
+}
 ```
