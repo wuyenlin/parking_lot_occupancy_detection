@@ -10,8 +10,7 @@ This reproduction code is done by Hao Liu, Sigurd Totland, and Yen-Lin Wu.
 There are 3 sets of dataset and their labels required to run this code. Run [get_dataset.sh](get_dataset.sh) as follows:
 
 ```
-sudo chmod +x get_dataset.sh
-./get_dataset.sh
+bash get_dataset.sh
 ```
 
 This command will download the datasets and unzip them in the project root directory.
@@ -86,4 +85,6 @@ Paper results:
 
 
 ### References
+```
 Amato, Giuseppe and Carrara, Fabio and Falchi, Fabrizio and Gennaro, Claudio and Meghini, Carlo and Vairo, Claudio. Deep learning for decentralized parking lot occupancy detection. Expert Systems with Applications (Pergamon), 2017.
+```
