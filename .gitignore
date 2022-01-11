@@ -4,6 +4,7 @@ PATCHES/
 CNRPark-Patches-150x150/
 PKLot/
 splits/
+*.pth
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
