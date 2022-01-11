@@ -1,1 +1,1 @@
-from .dataloader import selfData
+#!/usr/bin/python3
