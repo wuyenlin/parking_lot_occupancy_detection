@@ -64,7 +64,7 @@ def train(epoch, img_path, target_path, transform, net, criterion, device):
 def test(img_path, target_path, transform, net, device):
     print("\nTesting starts now...")
     test_dataset = Data(img_path, target_path, transform)
-    test_loader = DataLoader(test_dataset, batch_size=0, shuffle=True, \
+    test_loader = DataLoader(test_dataset, batch_size=2, shuffle=True, \
                             num_workers=0, collate_fn=collate_fn)
     correct = 0
     total = 0
